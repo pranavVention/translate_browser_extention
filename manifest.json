@@ -29,5 +29,17 @@
       "resources": ["dataExchangeTable.csv"],
       "matches": ["<all_urls>"]
     }
-  ]
+  ],
+  "commands": {
+    "toggle-language": {
+      "suggested_key": {
+        "default": "Ctrl+M",
+        "windows": "Ctrl+M",
+        "mac": "Command+M",
+        "chromeos": "Ctrl+M",
+        "linux": "Ctrl+M"
+      },
+      "description": "Toggle language"
+    }
+  }
 }

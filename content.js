@@ -80,3 +80,45 @@ function replaceWords(language) {
     node.nodeValue = text;
   });
 }
+
+function toggleLanguage() {
+  chrome.storage.sync.get('language', function(data) {
+    const currentLanguage = data.language || 'English'; // Default to English
+    let nextLanguage;
+
+    // Toggle between English, French, and German
+    if (currentLanguage === 'English') {
+      nextLanguage = 'French';
+    } else if (currentLanguage === 'French') {
+      nextLanguage = 'German';
+    } else {
+      nextLanguage = 'English';
+    }
+
+    // Save the selected language to storage
+    chrome.storage.sync.set({ 'language': nextLanguage }, function() {
+      console.log('Language set to ' + nextLanguage);
+      // Call a function to update content with the new language
+      updateContent(nextLanguage);
+    });
+  });
+}
+
+function updateContent(language) {
+  const elements = document.querySelectorAll('span, button');
+  elements.forEach(element => {
+    if (element.dataset.english) {
+      const englishWord = element.dataset.english;
+      const translatedWord = element.dataset[language.toLowerCase()];
+      element.textContent = translatedWord;
+    }
+  });
+}
+
+// Listen for the message from the background script
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+  if (request.action === 'toggleLanguage') {
+    toggleLanguage();
+  }
+});
+
