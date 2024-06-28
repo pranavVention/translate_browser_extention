@@ -22,21 +22,18 @@ Word Translator is a Chrome extension that translates specific words on a webpag
 1. Clone the repository:
 ```sh
 git clone https://github.com/yourusername/word-translator-extension.git
-   
-cd word-translator-extension
 ```
 
 2. Load the extension in Chrome:
 
-- Open chrome://extensions/ in your Chrome browser.
-- Enable "Developer mode" by clicking the toggle switch in the top right corner.
-- Click "Load unpacked" and select the translate_browser_extention directory.
+- Type `chrome://extensions/` into your Chrome browser's address bar and press Enter.
+- Find the **Developer mode** toggle switch in the top right corner of the page and click it to turn it on.
+- Click **Load unpacked** and select the translate_browser_extention directory.
   
 ## Usage
 1. Click on the Word Translator extension icon next to the address bar.
 2. Select the target language (English, French, or German) from the popup.
 3. The extension will automatically replace specific words on the current webpage based on the selected language.
-Development
 
 
 ### Directory Structure
