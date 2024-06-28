@@ -14,30 +14,23 @@ Word Translator is a Chrome extension that translates specific words on a webpag
 
 ### Prerequisites
 
-- Node.js and npm installed on your system.
+- [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed on your system.
+
 
 ### Steps
 
 1. Clone the repository:
- ```sh
-   git clone https://github.com/yourusername/word-translator-extension.git
-   cd word-translator-extension
-   ```
-2. Install dependencies:
-
-  ```sh
-    npm install
-    ```
-
-3. Bundle the extension
 ```sh
-  npx webpack --mode production
+git clone https://github.com/yourusername/word-translator-extension.git
+   
+cd word-translator-extension
 ```
-4. Load the extension in Chrome:
+
+2. Load the extension in Chrome:
 
 - Open chrome://extensions/ in your Chrome browser.
 - Enable "Developer mode" by clicking the toggle switch in the top right corner.
-- Click "Load unpacked" and select the dist directory.
+- Click "Load unpacked" and select the translate_browser_extention directory.
   
 ## Usage
 1. Click on the Word Translator extension icon next to the address bar.
@@ -45,39 +38,35 @@ Word Translator is a Chrome extension that translates specific words on a webpag
 3. The extension will automatically replace specific words on the current webpage based on the selected language.
 Development
 
-## Directory Structure
 
+### Directory Structure
+```
 word-translator-extension/
-├── src/
-│   ├── content.js
-│   ├── background.js
-│   ├── popup.js
-│   ├── popup.html
-│   ├── dataExchangeTable.csv
-├── dist/
+├── background.js
+├── content.js
+├── dataExchangeTable.csv
+├── icons/
 ├── manifest.json
-├── webpack.config.js
-├── package.json
-├── .gitignore
+├── papaparse.min.js
+├── popup.html
+├── popup.js
 └── README.md
+```
 
 ## Files
-src/content.js: The main content script that replaces words on the webpage.
-src/background.js: Handles background tasks (if any).
-src/popup.js: Manages the popup menu for language selection.
-src/popup.html: The HTML file for the popup menu.
-src/dataExchangeTable.csv: The CSV file containing the words and their translations.
-manifest.json: The manifest file for the Chrome extension.
-webpack.config.js: Webpack configuration file for bundling the extension.
-package.json: Contains the project dependencies and scripts.
-Scripts
-npm install: Installs the project dependencies.
-npx webpack --mode production: Bundles the extension using Webpack.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+
+- `background.js`: Handles background tasks (if any).
+- `content.js`: The main content script that replaces words on the webpage.
+- `popup.js`: Manages the popup menu for language selection.
+- `popup.html`: The HTML file for the popup menu.
+- `dataExchangeTable.csv`: The CSV file containing the words and their translations.
+- `manifest.json`: The manifest file for the Chrome extension.
+- `papaparse.min.js`: The library used for parsing CSV files.
+- `icons/`: Directory containing icons for the extension.
+- `README.md`: This README file.
+- `package.json`: Contains the project dependencies and scripts.
+
 
 ## Acknowledgements
 PapaParse for CSV parsing. (https://www.papaparse.com/)
-Webpack for bundling the extension.
-
 
