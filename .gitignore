@@ -1,0 +1,32 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+dist/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+
+# Ignore the packed extension
+*.crx
+
+# Ignore the build directory
+build/
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore specific files
+package-lock.json
