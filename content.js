@@ -79,9 +79,8 @@ function replaceWords(language) {
         const regex = new RegExp(`\\b${englishWord}\\b`, 'gi'); // Case-insensitive match
 
         // If the original word is all caps, and translatedWord is not null, convert translatedWord to all caps
-        if (text === text.toUpperCase() ){
+        if (text === text.toUpperCase()) {
           translatedWord = translatedWord.toUpperCase();
-          console.log(`Replacing ${englishWord} with ${translatedWord}`);
         }
 
         text = text.replace(regex, translatedWord);
