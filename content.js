@@ -13,7 +13,7 @@ function loadCSV(callback) {
       Papa.parse(csvText, {
         header: true,
         dynamicTyping: true,
-        complete: function(results) {
+        complete: function (results) {
           results.data.forEach(row => {
             const englishWord = row.English;
             dataExchangeTable[englishWord] = {
@@ -30,7 +30,7 @@ function loadCSV(callback) {
     });
 }
 
-chrome.storage.sync.get(['language'], function(result) {
+chrome.storage.sync.get(['language'], function (result) {
   const language = result.language || 'English'; // Default to English if no language is set
   loadCSV(() => {
     if (language !== 'English') {
@@ -73,16 +73,26 @@ function replaceWords(language) {
   textNodes.forEach(node => {
     let text = node.nodeValue;
     Object.keys(dataExchangeTable).forEach(englishWord => {
-      const translatedWord = dataExchangeTable[englishWord][language];
-      const regex = new RegExp(`\\b${englishWord}\\b`, 'gi'); // Case-insensitive match
-      text = text.replace(regex, translatedWord);
+      let translatedWord = dataExchangeTable[englishWord][language]; // Changed const to let
+      // Check if translatedWord is not null before proceeding
+      if (translatedWord) {
+        const regex = new RegExp(`\\b${englishWord}\\b`, 'gi'); // Case-insensitive match
+
+        // If the original word is all caps, and translatedWord is not null, convert translatedWord to all caps
+        if (text === text.toUpperCase() ){
+          translatedWord = translatedWord.toUpperCase();
+          console.log(`Replacing ${englishWord} with ${translatedWord}`);
+        }
+
+        text = text.replace(regex, translatedWord);
+      }
     });
     node.nodeValue = text;
   });
 }
 
 function toggleLanguage() {
-  chrome.storage.sync.get('language', function(data) {
+  chrome.storage.sync.get('language', function (data) {
     const currentLanguage = data.language || 'English'; // Default to English
     let nextLanguage;
 
@@ -96,7 +106,7 @@ function toggleLanguage() {
     }
 
     // Save the selected language to storage
-    chrome.storage.sync.set({ 'language': nextLanguage }, function() {
+    chrome.storage.sync.set({ 'language': nextLanguage }, function () {
       console.log('Language set to ' + nextLanguage);
       // Call a function to update content with the new language
       updateContent(nextLanguage);
@@ -116,7 +126,7 @@ function updateContent(language) {
 }
 
 // Listen for the message from the background script
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   if (request.action === 'toggleLanguage') {
     toggleLanguage();
   }
