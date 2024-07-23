@@ -18,7 +18,8 @@ function loadCSV(callback) {
             const englishWord = row.English;
             dataExchangeTable[englishWord] = {
               French: row.French,
-              German: row.German
+              German: row.German,
+              Spanish: row.Spanish
             };
           });
           callback();
@@ -95,12 +96,15 @@ function toggleLanguage() {
     const currentLanguage = data.language || 'English'; // Default to English
     let nextLanguage;
 
-    // Toggle between English, French, and German
+    // Toggle between English, French, German and Spanish
     if (currentLanguage === 'English') {
       nextLanguage = 'French';
     } else if (currentLanguage === 'French') {
       nextLanguage = 'German';
-    } else {
+    } else if (currentLanguage === 'German') {
+      nextLanguage = 'Spanish';
+    } 
+    else {
       nextLanguage = 'English';
     }
 
