@@ -1,5 +1,75 @@
 English,French,German,Spanish,
-Ensure the expected start position matches the stack,S'assurer que la position de départ attendue correspond à la pile,"Stellen Sie sicher, dass die erwartete Startposition mit dem Stapel übereinstimmt",Asegurar que la posición inicial esperada coincida con la pila,
+
+Emergency Stop,Arrêt d'urgence,Not-Aus,Parada de emergencia
+Protective Stop,Arrêt de protection,Schutzstopp,Parada de protección
+MachineMotion axis error,Erreur d'axe MachineMotion,Maschinenbewegungsachsenfehler,Error de eje de MachineMotion
+Failed to connect to MachineMotion,Échec de la connexion à MachineMotion,Verbindung zu MachineMotion fehlgeschlagen,Error al conectar a MachineMotion
+MachineMotion disconnected,MachineMotion déconnecté,MachineMotion getrennt,MachineMotion desconectado
+Robot disconnected - out of remote control mode,Robot déconnecté - hors du mode de contrôle à distance,Roboter getrennt - aus dem Fernsteuerungsmodus,Robot desconectado - fuera del modo de control remoto
+Refused connection - reconnect to robot,Connexion refusée - reconnectez-vous au robot,Verbindung verweigert - Roboter erneut verbinden,Conexión rechazada - reconectar al robot
+Failed to communicate with clamp gripper,Échec de la communication avec la pince,Kommunikation mit Klammergreifer fehlgeschlagen,Error al comunicarse con la pinza
+Failed to reset the robot,Échec de la réinitialisation du robot,Roboter zurücksetzen fehlgeschlagen,Error al reiniciar el robot
+Failed to reset the MachineMotion,Échec de la réinitialisation de MachineMotion,Maschinenbewegung zurücksetzen fehlgeschlagen,Error al reiniciar MachineMotion
+Failed to validate gripper,Échec de la validation de la pince,Greifer validieren fehlgeschlagen,Error al validar la pinza
+Failed to place box,Échec du placement de la boîte,Box platzieren fehlgeschlagen,Error al colocar la caja
+Failed to pick box,Échec de la prise de la boîte,Box aufnehmen fehlgeschlagen,Error al recoger la caja
+IK not found :,IK nicht gefunden :,IK no encontrado :
+Pick position - out of reach,Position de prise - hors de portée,Aufnahmeposition - außer Reichweite,Posición de recogida - fuera de alcance
+Place position - out of reach,Position de placement - hors de portée,Platzierungsposition - außer Reichweite,Posición de colocación - fuera de alcance
+Exceeded timeout limit for gripping box,Limite de temps dépassée pour saisir la boîte,Zeitüberschreitung beim Greifen der Box,Límite de tiempo excedido para agarrar la caja
+Failed to open clamp gripper,Échec de l'ouverture de la pince,Klammergreifer öffnen fehlgeschlagen,Error al abrir la pinza
+Failed to Linear retract wrt base frame,Échec de la rétraction linéaire par rapport au cadre de base,Lineares Zurückziehen in Bezug auf den Basisrahmen fehlgeschlagen,Error al retraer linealmente con respecto al marco base
+Failed to Linear retract wrt tool frame,Échec de la rétraction linéaire par rapport au cadre de l'outil,Lineares Zurückziehen in Bezug auf den Werkzeugrahmen fehlgeschlagen,Error al retraer linealmente con respecto al marco de la herramienta
+Failed to home - please jog the robot,Échec du retour à la position d'origine - veuillez déplacer le robot,Heimkehr fehlgeschlagen - bitte Roboter joggen,Error al volver a la posición inicial - por favor mueva el robot
+Failed to execute custom slip sheet motion,Échec de l'exécution du mouvement de feuille de glissement personnalisé,Ausführung der benutzerdefinierten Rutschblattbewegung fehlgeschlagen,Error al ejecutar el movimiento de hoja deslizante personalizado
+Motion unsucessful - ,Mouvement infructueux - ,Bewegung erfolglos - ,Movimiento fallido - 
+Failed to validate clamp gripper,Échec de la validation de la pince,Klammergreifer validieren fehlgeschlagen,Error al validar la pinza
+Slip sheet detected on startup - clear slip sheet and restart,Feuille de glissement détectée au démarrage - effacez la feuille de glissement et redémarrez,Rutschblatt beim Start erkannt - Rutschblatt löschen und neu starten,Hoja deslizante detectada al iniciar - limpie la hoja deslizante y reinicie
+Range extender unable to reach desired position,L'extenseur de portée ne peut pas atteindre la position souhaitée,Reichweitenverlängerung kann die gewünschte Position nicht erreichen,El extensor de alcance no puede alcanzar la posición deseada
+Position not reachable,Position non atteignable,Position nicht erreichbar,Posición no alcanzable
+Range extender failed during async motion,Échec de l'extenseur de portée pendant le mouvement asynchrone,Reichweitenverlängerung während asynchroner Bewegung fehlgeschlagen,Error del extensor de alcance durante el movimiento asíncrono
+Range extender: Unable to reach next box place. Verify reach conservative factor for Range Extender,Extenseur de portée : Impossible d'atteindre le prochain emplacement de la boîte. Vérifiez le facteur de portée conservateur pour l'extenseur de portée,Reichweitenverlängerung: Nächsten Boxplatz nicht erreichbar. Überprüfen Sie den konservativen Reichweitenfaktor für den Reichweitenverlängerer,Extensor de alcance: No se puede alcanzar el siguiente lugar de la caja. Verifique el factor conservador de alcance para el extensor de alcance
+Range extender: Unable to reach next box pick. Verify reach conservative factor for Range Extender,Extenseur de portée : Impossible d'atteindre la prochaine prise de boîte. Vérifiez le facteur de portée conservateur pour l'extenseur de portée,Reichweitenverlängerung: Nächste Boxaufnahme nicht erreichbar. Überprüfen Sie den konservativen Reichweitenfaktor für den Reichweitenverlängerer,Extensor de alcance: No se puede alcanzar la siguiente recogida de caja. Verifique el factor conservador de alcance para el extensor de alcance
+Range extender: Unable to reach requested point. Verify place retract distance,Extenseur de portée : Impossible d'atteindre le point demandé. Vérifiez la distance de rétraction de l'emplacement,Reichweitenverlängerung: Angeforderten Punkt nicht erreichbar. Überprüfen Sie die Rückzugsdistanz des Platzes,Extensor de alcance: No se puede alcanzar el punto solicitado. Verifique la distancia de retracción del lugar
+Range extender: Unable to reach requested point for slipsheet,Extenseur de portée : Impossible d'atteindre le point demandé pour la feuille de glissement,Reichweitenverlängerung: Angeforderten Punkt für Rutschblatt nicht erreichbar,Extensor de alcance: No se puede alcanzar el punto solicitado para la hoja deslizante
+Pick retract position not reachable,Position de rétraction de prise non atteignable,Aufnahmerückzugsposition nicht erreichbar,Posición de retracción de recogida no alcanzable
+Invalid job - Check your configuration.,Travail invalide - Vérifiez votre configuration.,Ungültiger Job - Überprüfen Sie Ihre Konfiguration.,Trabajo inválido - Verifique su configuración.
+Error initializing files,Erreur d'initialisation des fichiers,Fehler beim Initialisieren der Dateien,Error al inicializar archivos
+Slip sheet mapped incorrectly. Check configuration - ,Feuille de glissement mal cartographiée. Vérifiez la configuration - ,Rutschblatt falsch zugeordnet. Überprüfen Sie die Konfiguration - ,Hoja deslizante mapeada incorrectamente. Verifique la configuración - 
+Incorrect temperature settings - MIN_WORKING_TEMP should be less than MIN_IDEAL_TEMP,Paramètres de température incorrects - MIN_WORKING_TEMP doit être inférieur à MIN_IDEAL_TEMP,Falsche Temperatureinstellungen - MIN_WORKING_TEMP sollte kleiner als MIN_IDEAL_TEMP sein,Configuraciones de temperatura incorrectas - MIN_WORKING_TEMP debe ser menor que MIN_IDEAL_TEMP
+Invalid sensor / gripper type for slipsheet,Type de capteur / pince invalide pour la feuille de glissement,Ungültiger Sensor- / Greifertyp für Rutschblatt,Tipo de sensor / pinza inválido para la hoja deslizante
+Gripper type not supported,Type de pince non pris en charge,Greifertyp nicht unterstützt,Tipo de pinza no soportado
+Gripper communication error - The selected sku uses OnRobot FGP gripper but communication with the it cannot be established. Please confirm the correct gripper is installed.,Erreur de communication de la pince - Le SKU sélectionné utilise la pince OnRobot FGP mais la communication avec elle ne peut pas être établie. Veuillez confirmer que la pince correcte est installée.,Greiferkommunikationsfehler - Das ausgewählte SKU verwendet den OnRobot FGP-Greifer, aber die Kommunikation mit ihm kann nicht hergestellt werden. Bitte bestätigen Sie, dass der richtige Greifer installiert ist.,Error de comunicación de la pinza - El SKU seleccionado usa la pinza OnRobot FGP pero no se puede establecer comunicación con ella. Por favor confirme que la pinza correcta está instalada.
+Incorrect SKU settings - A selected recipe contains close tray boxes while clamp gripper is installed. Please install vacuum gripper or change selected recipe,Paramètres SKU incorrects - Une recette sélectionnée contient des boîtes de plateau fermées alors que la pince est installée. Veuillez installer une pince à vide ou changer la recette sélectionnée,Falsche SKU-Einstellungen - Ein ausgewähltes Rezept enthält geschlossene Tablettboxen, während der Klammergreifer installiert ist. Bitte installieren Sie einen Vakuumgreifer oder ändern Sie das ausgewählte Rezept,Configuraciones de SKU incorrectas - Una receta seleccionada contiene cajas de bandeja cerradas mientras la pinza está instalada. Por favor instale una pinza de vacío o cambie la receta seleccionada
+Slipsheet with FGP Gripper requires custom path,La feuille de glissement avec pince FGP nécessite un chemin personnalisé,Rutschblatt mit FGP-Greifer erfordert benutzerdefinierten Pfad,La hoja deslizante con pinza FGP requiere una ruta personalizada
+No default gripper. Create/select a default gripper in settings.,Aucune pince par défaut. Créez/sélectionnez une pince par défaut dans les paramètres.,Kein Standardgreifer. Erstellen/auswählen eines Standardgreifers in den Einstellungen.,No hay pinza predeterminada. Cree/seleccione una pinza predeterminada en la configuración.
+Slip Sheet IOs disbaled - Please enable the slip sheet IO,IO de feuille de glissement désactivés - Veuillez activer l'IO de feuille de glissement,Rutschblatt-IOs deaktiviert - Bitte aktivieren Sie das Rutschblatt-IO,IO de hoja deslizante deshabilitados - Por favor habilite el IO de hoja deslizante
+Incorrect Range Extender Drive selected,Lecteur d'extenseur de portée incorrect sélectionné,Falscher Reichweitenverlängerungsantrieb ausgewählt,Unidad de extensor de alcance incorrecta seleccionada
+Incorrect palletizing mode selected for the selected gripper,Mode de palettisation incorrect sélectionné pour la pince sélectionnée,Falscher Palettierungsmodus für den ausgewählten Greifer ausgewählt,Modo de paletización incorrecto seleccionado para la pinza seleccionada
+Unused,Inutilisé,Unbenutzt,No utilizado
+Connecting to MachineMotion,Connexion à MachineMotion,Verbindung zu MachineMotion,Conectando a MachineMotion
+Connected to MachineMotion,Connecté à MachineMotion,Verbunden mit MachineMotion,Conectado a MachineMotion
+Reconnecting to Robot . .,Reconnexion au robot . .,Erneute Verbindung zum Roboter . .,Reconectando al robot . .
+Motion successful - ,Mouvement réussi - ,Bewegung erfolgreich - ,Movimiento exitoso - 
+Computation successful - ,Calcul réussi - ,Berechnung erfolgreich - ,Cálculo exitoso - 
+Robot current high,Courant du robot élevé,Roboterstrom hoch,Corriente del robot alta
+Robot torque high,Couple du robot élevé,Roboterdrehmoment hoch,Par de torsión del robot alto
+Inavlid Program state,État du programme invalide,Ungültiger Programmzustand,Estado del programa inválido
+object is not subscriptable,l'objet n'est pas indexable,Objekt ist nicht subskriptierbar,el objeto no es subscriptible
+object has no attribute,l'objet n'a pas d'attribut,Objekt hat kein Attribut,el objeto no tiene atributo
+index out of range,index hors de portée,Index außerhalb des Bereichs,índice fuera de rango
+Critical Error - Contact Support,Erreur critique - Contactez le support,Kritischer Fehler - Support kontaktieren,Error crítico - Contacte al soporte
+Config is none,La configuration est nulle,Konfiguration ist keine,La configuración es
+Invalid side,Côté invalide,Ungültige Seite,Lado inválido
+perform retract (placeBoxLinearMotion),effectuer la rétraction (placeBoxLinearMotion),Rückzug durchführen (placeBoxLinearMotion),realizar retracción (placeBoxLinearMotion)
+does J6 place need correction,le lieu J6 a-t-il besoin de correction,muss der J6-Platz korrigiert werden,¿necesita corrección el lugar J6?
+side and current J6,côté et J6 actuel,Seite und aktueller J6,lado y J6 actual
+
+
+All pallets removed on left bay. Will watch for a refill now,Toutes les palettes retirées de la baie gauche. Surveillera un remplissage maintenant,Alle Paletten aus der linken Bucht entfernt. Wird jetzt auf eine Nachfüllung achten,Todas las paletas retiradas de la bahía izquierda. Vigilará una recarga ahora
+All pallets removed on right bay. Will watch for a refill now,Toutes les palettes retirées de la baie droite. Surveillera un remplissage maintenant,Alle Paletten aus der rechten Bucht entfernt. Wird jetzt auf eine Nachfüllung achten,Todas las paletas retiradas de la bahía derecha. Vigilará una recarga ahora
+
+Ensure the expected start position matches the stack,S'assurer que la position de départ attendue correspond à la pile,Stellen Sie sicher, dass die erwartete Startposition mit dem Stapel übereinstimmt,Asegurar que la posición inicial esperada coincida con la pila,
 Add a stack,Ajouter une pile,Stapel hinzufügen,Agregar una pila,
 Add a new box,Ajouter une nouvelle boîte,Box hinzufügen,Agregar una nueva caja,
 Add new slip sheet,Ajouter une nouvelle feuille de glissement,Zwischenlage hinzufügen,Agregar nueva hoja deslizante,

@@ -2,12 +2,12 @@
 
 ## Description
 
-Word Translator is a Chrome extension that translates specific words on a webpage based on a data exchange table. You can configure the extension to translate words between English, French, and German.
+Word Translator is a Chrome extension that translates specific words on a webpage based on a data exchange table. You can configure the extension to translate words between English, French, German and Spanish.
 
 ## Features
 
 - Translates specific words on a webpage based on a CSV data exchange table.
-- Supports English, French, and German translations.
+- Supports English, French, German and Spanish translations.
 - Allows users to select the target language through a popup menu.
 
 ## Installation
@@ -32,7 +32,7 @@ git clone https://github.com/yourusername/word-translator-extension.git
   
 ## Usage
 1. Click on the Word Translator extension icon next to the address bar.
-2. Select the target language (English, French, or German) from the popup.
+2. Select the target language (English, French, German or Spanish) from the popup.
 3. The extension will automatically replace specific words on the current webpage based on the selected language.
 
 
